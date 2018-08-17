@@ -3,6 +3,7 @@
     <Section1/>
     <Section2/>
     <Section3/>
+    <Section6/>
     <Footer/>
   </div>
 </template>
@@ -14,6 +15,7 @@ import Section2 from './Sections/Section-2.vue'
 import Section3 from './Sections/Section-3.vue'
 import Section4 from './Sections/Section-4.vue'
 import Section5 from './Sections/Section-5.vue'
+import Section6 from './Sections/Section-6.vue'
 
 export default {
   name: 'Home',
@@ -23,7 +25,8 @@ export default {
     Section2,
     Section3,
     Section4,
-    Section5
+    Section5,
+    Section6
   }
 }
 </script>
