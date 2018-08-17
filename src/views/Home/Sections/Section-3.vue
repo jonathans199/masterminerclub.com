@@ -62,7 +62,7 @@
     width: 100%
   }
   .third__section{
-    background-color: black;
+    background-color: #000;
     color: white
   }
       

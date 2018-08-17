@@ -2,7 +2,7 @@
   <nav id="menu">
     <div style="display:flex">
       <div class="col-3 d-flex justify-content-center align-items-center">
-        <img class="menu__logo" src="/assets/img/logo_horizontal.svg" alt="">
+        <img class="menu__logo" src="/assets/img/white_logo_horizontal.svg" alt="">
       </div>
       <div class="menu__prices col-5 d-flex justify-content-start align-items-center">
         <span>
