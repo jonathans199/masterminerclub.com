@@ -70,7 +70,8 @@ export default {
   data(){
     return {
       prices: [],
-      api: "https://api.masterminerclub.biz/api/v1/market_cap"
+      api: "https://api.masterminerclub.biz/api/v1/market_cap",
+      prices: [{},{},{}]
     }
   },
 
