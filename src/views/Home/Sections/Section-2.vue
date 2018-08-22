@@ -15,16 +15,22 @@
       </div>
       
     </section>
-    <div class="second__section-end"></div>
+    <!-- <div class="second__section-end"></div> -->
   </div>
 </template>
 
 <style scoped>
-  .second__section-end{
-    height: 600px;
-    -webkit-clip-path: polygon(100% 55%, 0% 100%, 100% 100%);
-    clip-path: polygon(100% 55%, 0% 100%, 100% 100%);
-    background-color: black;
+
+  .second__section{
+    position: relative;
+    /* width: 100%; */
+    min-height: 67vh;
+    background: transparent url("/assets/img/grey.png");
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    background-repeat: no-repeat;
+    background-size: 720px;
+    background-position: -40% bottom;
   }
       
 </style>
@@ -34,22 +40,22 @@ import jQuery from 'jquery'
 export default {
   name:'Section2',
 
-  mounted() {
-    let cont = () => jQuery("#second-section")
-            .css("max-height", (jQuery( window ).height() -600))
+  // mounted() {
+  //   let cont = () => jQuery("#second-section")
+  //           .css("max-height", (jQuery( window ).height() -600))
 
-    let cont2 = () => jQuery("#second-section-container")
-            .css("min-height", (jQuery( window ).height()))
-    jQuery(document).ready(function() {
-      cont()
-      cont2()
-      jQuery( window ).resize(function() {
-        cont()
-        cont2()
-      })
-    })
+  //   let cont2 = () => jQuery("#second-section-container")
+  //           .css("min-height", (jQuery( window ).height()))
+  //   jQuery(document).ready(function() {
+  //     cont()
+  //     cont2()
+  //     jQuery( window ).resize(function() {
+  //       cont()
+  //       cont2()
+  //     })
+  //   })
 
 
-  }
+  // }
 }
 </script>

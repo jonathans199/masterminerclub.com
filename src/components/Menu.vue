@@ -1,5 +1,16 @@
 <template>
   <nav id="menu">
+      <!-- overlay Menu -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      <!-- overlay Menu end -->
     <div style="display:flex">
       <div class="col-3 d-flex justify-content-center align-items-center">
         <img class="menu__logo" src="/assets/img/white_logo_horizontal.svg" alt="">
@@ -39,14 +50,7 @@
           <b-nav-item class="list-inline-item menu__link-item-2">
             SIGN IN
           </b-nav-item>
-          <b-nav-item-dropdown right no-flip no-caret class="list-inline-item menu__link-item-3">
-            <!-- Using button-content slot -->
-            <template slot="button-content">
-              <i class="fa fa-bars"></i>
-            </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Signout</b-dropdown-item>
-          </b-nav-item-dropdown>
+           <span class="menu__logo" onclick="openNav()">MENU <span class="menu-icon">&#9776;</span></span>
         </b-navbar-nav> 
       </div>
     </div>
@@ -87,10 +91,19 @@ export default {
     }
   }
 }
+
 </script>
+     
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+#menu {
+    color: #8a8a8a ;
+    border-bottom: 1px solid rgba(228,230,233,0.2);
+    height: 7.5rem;
+  }
+
   .menu__link {
     font-size: 12px
   }
@@ -110,8 +123,8 @@ export default {
 
   .menu__link-item-1:hover {
     border: 1px solid #fff;
-    border: 1px solid #3e9fef;
-    background-color: #3e9fef;
+    border: 1px solid #025385;
+    background-color: #025385;
   }
 
   .menu__link-item-2{
@@ -121,8 +134,8 @@ export default {
   }
   
   .menu__link-item-2:hover{
-    border: 1px solid #3e9fef;
-    background-color: #3e9fef;
+    border: 1px solid #025385;
+    background-color: #025385;
     color: #fff !important;
     padding-left: 30px;
     padding-right: 30px
@@ -158,22 +171,72 @@ export default {
   }
 
   .menu__prices span{
-    border-left: 1px solid #8a8a8a;
+    border-left: 1px solid rgba(228,230,233,0.2);
     padding: 10px 40px;
-    font-size: 11px
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    
   }
 
   .menu__prices p {
     margin-bottom: 0px !important
   }
 
-  #menu {
-    color: #8a8a8a ;
-    border-bottom: 1px solid #8a8a8a
-  }
+  
 
   .menu__logo {
     max-width: 400px;
-    width: 100%
+    width: 80%;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
   }
+
+  .menu-icon {
+    font-size: 2rem;
+  }
+
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
 </style>
