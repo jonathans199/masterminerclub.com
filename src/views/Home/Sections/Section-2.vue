@@ -2,8 +2,8 @@
   <div>
     <section  id="second-section" class="second__section">
       <div class="container d-flex align-items-center" id="second-section-container">
-        <div class="row col-12">
-          <div class="col-5 ">
+        <div class="row col-12" data-aos="fade-up">
+          <div class="col-5">
             <img src="/assets/img/main_logo.svg" alt="">
           </div>
           <div class="col-7 text-justify d-flex align-items-center">

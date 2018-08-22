@@ -5,7 +5,7 @@
       <Menu/>
       <div class="container d-flex align-items-center" id="first-section-container">
         <div class="row col-12">
-          <div class="col-6 text-right first__section-content-1">
+          <div class="col-6 text-right first__section-content-1" data-aos="fade-up">
             <div class="sub-text">MASTER MINER CLUB</div>
             <h1>UNETE AHORA</h1>
             <div class="sub-text first__section-description">
@@ -15,7 +15,7 @@
             </div> 
             <h3>INICIAR <i class="fa fa-arrow-right"></i></h3>
           </div>
-          <div class="col-6  d-flex justify-content-center first__section-content-2">
+          <div class="col-6  d-flex justify-content-center first__section-content-2" data-aos="fade-up">
             <div class="col-12">
               <form class="first__section-form">
                 <div class="form-group">
