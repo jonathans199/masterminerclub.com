@@ -62,8 +62,12 @@
     width: 100%
   }
   .third__section{
+    margin-top: -20vh;
+    /* padding: 25rem 0; */
     background-color: #000;
-    color: white
+    color: white;
+    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
   }
       
 </style>
