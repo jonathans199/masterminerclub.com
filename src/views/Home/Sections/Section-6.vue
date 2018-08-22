@@ -7,7 +7,7 @@
           <div class="card" id="plan-1">
             <div class="card-body">
               <div class="text-center">
-                <img src="/assets/img/plan-1.png" alt="">
+                <img src="/assets/img/section7-1.png" alt="">
               </div>
               <div class="text-left sixth__section-description">
                 <ul>
@@ -23,7 +23,7 @@
           <div class="card " id="plan-2">
             <div class="card-body">
               <div class="text-center">
-                <img src="/assets/img/plan-2.png" alt="">
+                <img src="/assets/img/section7-2.png" alt="">
               </div>
               <div class="text-left sixth__section-description">
                 <ul>
@@ -39,7 +39,7 @@
           <div class="card" id="plan-3">
             <div class="card-body">
               <div class="text-center">
-                <img src="/assets/img/plan-3.png" alt="">
+                <img src="/assets/img/section7-3.png" alt="">
               </div>
               <div class="text-center sixth__section-price">
                 <b>$250</b> / Month
