@@ -1,13 +1,14 @@
 <template>
   <div>
+    <div class="image_overlay"></div>
     <section id="first-section" class="first__section">
       <Menu/>
       <div class="container d-flex align-items-center" id="first-section-container">
         <div class="row col-12">
           <div class="col-6 text-right first__section-content-1">
-            <p>MASTER MINER CLUB</p>
+            <div class="sub-text">MASTER MINER CLUB</div>
             <h1>UNETE AHORA</h1>
-            <div class="first__section-description">
+            <div class="sub-text first__section-description">
               <p>LA FORMA MAS INNOVADORA Y</p>
               <p>LUCRATIVA DE MINAR</p>
               <p>CRYPTOMONEDA</p>
@@ -18,6 +19,7 @@
             <div class="col-12">
               <form class="first__section-form">
                 <div class="form-group">
+                  <h2 class="form-header">registrate hoy!</h2>
                   <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email">
                 </div>
                 <div class="form-group">
@@ -75,26 +77,23 @@ export default {
 
 <style scoped>
   .first__section-form-terms{
-    padding-top: 10px;
+    /* padding-top: 10px; */
     font-size: 10px
   }
 
   .first__section-form input {
     border-radius: 0;
-    border-radius: 5px;
+    border-radius: 1px;
   }
 
   .first__section-form button {
-    width: 100%;
+    /* width: 100%; */
     border-radius: 0;
     background-color:transparent;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: .3rem 1rem;   
     font-size: 15px;
     color: white;
-    margin-bottom: 10px
+    margin-left: .5rem;
   }
 
   .first__section-form button:hover {
@@ -104,18 +103,14 @@ export default {
     cursor: pointer;
   }
 
-  .first__section-form{
-    padding-top: 20px
-  }
-
   .first__section-content-1{
     margin-right: 50px
   }
 
   .first__section-content-2{
-    border-radius:3px !important;
-    margin-left: 50px;
-    max-width: 400px;
+    border-radius:1px !important;
+    left: 1rem;
+    max-width: 40%;
     min-height: 300px;
     background-color: #025385;
     padding: 20px
@@ -148,12 +143,37 @@ export default {
 
   #first-section {
     background-color: #000002;
-    background-image: url(/assets/back/section-1.png);
+    background-image: url(../../../assets/img/blockchain.jpg);
     width: 100%;
     background-size: cover;
     background-position: center 301px;
     background-repeat: no-repeat;
+  }
 
+  .image_overlay {
+      opacity: .4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      overflow: hidden;
+      z-index: 0;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+    color: #a3a3a3;
+    font-weight: 100;
+    letter-spacing: 3px;
+  }
+
+  .form-header {
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-align: center;
+    
   }
 
 </style>
