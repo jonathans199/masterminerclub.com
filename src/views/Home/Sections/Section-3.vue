@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section  id="third-section" class="third__section">
-      <div class="container master-node__section">
+    <section class="third__section" >
+      <div class="container section3_section" data-aos="fade-up" data-aos-delay="500">
           <div class="">
             <h1>
               MASTER NODO?
@@ -15,6 +15,54 @@
           </div>
           <div class="left-image">
             <img src="/assets/img/section3.png" alt="">
+          </div>
+      </div>
+      <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
+           <div class="left-image">
+            <img src="/assets/img/section4.png" alt="">
+          </div>
+          <div class="">
+            <h1>
+              ANALISYS DE MERCADO
+            </h1>
+            <p>
+              Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
+            </p>
+            <button>
+              COMENZAR AHORA
+            </button>
+          </div>
+      </div>
+      <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
+          <div class="">
+            <h1>
+              INVERSIÓN EN MASTERNODOS
+            </h1>
+            <p>
+              Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
+            </p>
+            <button>
+              COMENZAR AHORA
+            </button>
+          </div>
+          <div class="left-image">
+            <img src="/assets/img/section5.png" alt="">
+          </div>
+      </div>
+      <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
+           <div class="left-image">
+            <img src="/assets/img/section6.png" alt="">
+          </div>
+          <div class="">
+            <h1>
+              ESTRATEGIA DE INVERSION
+            </h1>
+            <p>
+              Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
+            </p>
+            <button>
+              COMENZAR AHORA
+            </button>
           </div>
       </div>
     </section>
@@ -46,7 +94,7 @@
   .third__section p {
     margin-top: 70px;
     margin-bottom: 70px;
-     min-width: 25rem;
+    min-width: 25rem;
   }
   .third__section-divide {
     border-bottom: 1px solid rgba(228,230,233,0.2);
@@ -54,23 +102,30 @@
     padding-left: 20px;
   }
   .third__section h1 {
-    font-weight: 300
+    font-weight: 300;
+    padding: 0;
   }
   .third__section img {
     width: 100%
   }
   .third__section{
     margin-top: -20vh;
-    padding: 25rem 0;
-    background-color: #000;
+    padding: 33rem 0 0 0;
     color: #e0e0e0;
     -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0% 100%);
+    background: #000 url("/assets/img/bluebk2.jpg");
+    background-repeat: repeat-y;
+    background-size: 2500px;
+    background-position: right 1500px;
+    
   }
-  .master-node__section {
+  .section3_section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 43rem;
+    height: 400px;
   } 
   
 
