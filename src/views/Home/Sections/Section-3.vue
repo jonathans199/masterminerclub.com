@@ -17,7 +17,7 @@
             <img src="/assets/img/section3.png" alt="">
           </div>
       </div>
-      <div class="container section3_section" data-aos="fade-up" data-aos-delay="500">
+      <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
            <div class="left-image">
             <img src="/assets/img/section4.png" alt="">
           </div>
@@ -33,7 +33,7 @@
             </button>
           </div>
       </div>
-      <div class="container section3_section" data-aos="fade-up" data-aos-delay="500">
+      <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
           <div class="">
             <h1>
               INVERSIÓN EN MASTERNODOS
@@ -49,7 +49,7 @@
             <img src="/assets/img/section5.png" alt="">
           </div>
       </div>
-      <div class="container section3_section" data-aos="fade-up" data-aos-delay="500">
+      <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
            <div class="left-image">
             <img src="/assets/img/section6.png" alt="">
           </div>
@@ -65,7 +65,6 @@
             </button>
           </div>
       </div>
-      
     </section>
     
   </div>
@@ -115,7 +114,6 @@
     color: #e0e0e0;
     -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0% 100%);
-
     background: #000 url("/assets/img/bluebk2.jpg");
     background-repeat: repeat-y;
     background-size: 2500px;
