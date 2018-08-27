@@ -4,15 +4,9 @@
       <div class=" ">
         <h2>NUESTROS PLANES</h2>
           <div class="card-deck">
-<<<<<<< HEAD
-            <div class="card card-flipper" id="card" @click="flip" >
-              <div class="front " >
-                <div class="card-img-top card-image-1" alt="Card image cap"></div>
-=======
             <div  class="card card-custom">
               <div class="card-side card-front">
                 <div class="card-img-top card-image-1" alt="Card image cap"> </div>
->>>>>>> cfa50cc5c6969a3055d97e36318bb75fb6c74bd1
                 <div class="card-body">
                   <h5 class="card-title_custom title1">Platinum</h5>
                   <p class="card-text card-text_custom">
@@ -25,22 +19,10 @@
                 </div>
               </div>    
               
-              <div class="back ">
-                <div class="card-img-top card-image-1 d-block" alt="Card image cap"></div>
-                <div class="card-body">
-                  <h5 class="card-title_custom title1">Platinum</h5>
-                  <p class="card-text card-text_custom">
-                    <ul>
-                      <li>$ 1,000 USD MINING PACK</li>
-                      <li>$5 USD X 400 DíAS</li>
-                    </ul>
-                  </p>
-                  <button class="button-adquirir">Adquirir ahora</button>
-                </div>
-              </div>         
+              
             </div>
 
-            <div class="card ">
+            <div class="card card-custom">
               <div class="card-front card-img-top card-image-2" alt="Card image cap"> </div>
               <div class="card-body">
                 <h5 class="card-title_custom title2">gold</h5>
@@ -55,7 +37,7 @@
               </div>
             </div>
 
-            <div class="card ">
+            <div class="card card-custom">
               <div class="card-img-top card-image-3" alt="Card image cap"> </div>
               <div class="card-body">
                 <h5 class="card-title_custom title3">silver</h5>
@@ -70,188 +52,20 @@
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-        <!-- <div class="sixth-section-plans card-deck">
-          <div class="card" id="plan-1">
-            <div class="card-body custom-card__body">
-              <div class="text-center">
-                <img src="/assets/img/section7-1.png" alt="">
-              </div>
-              <div class="sixth__section-description">
-                <ul>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card " id="plan-2">
-            <div class="card-body">
-              <div class="text-center">
-                <img src="/assets/img/section7-2.png" alt="">
-              </div>
-              <div class="sixth__section-description">
-                <ul>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card" id="plan-3">
-            <div class="card-body">
-              <div class="text-center">
-                <img src="/assets/img/section7-3.png" alt="">
-              </div>
-              <div class="text-center sixth__section-price">
-                <b>$250</b> / Month
-              </div>
-              <div class="sixth__section-description">
-                <ul>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                  <li>Lorem ipsum, dolor sit amet </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
->>>>>>> cfa50cc5c6969a3055d97e36318bb75fb6c74bd1
       </div>
     </div>
   </section>
-
 </template>
 
 <script>
-<<<<<<< HEAD
-import $ from 'jquery'
-
+import jQuery from 'jquery'
 export default {
-  name:'Section6',
-  methods: {
-    flip(){
-      $('#card').toggleClass('flipped')
-      // $('.front').toggleClass('d-none')
-      // $('.back').addClass('d-block')
-    }
-=======
-
-  import jQuery from 'jquery'
-  export default {
-    
-    name:'Section6',
-
-  mounted() {
-
-    document.querySelector("#card1").classList.toggle("flip");
-
-      /* 
-      * Holder.js for demo image
-      * Just for demo purpose
-      */
-
-              
-
-
-  //   let cont = () => jQuery("#sixth-section")
-  //           .css("max-height", (jQuery( window ).height()))
-
-  //   let cont2 = () => jQuery("#sixth-section-container")
-  //           .css("min-height", (jQuery( window ).height()))
-  //   jQuery(document).ready(function() {
-  //     cont()
-  //     cont2()
-  //     jQuery( window ).resize(function() {
-  //       cont()
-  //       cont2()
-  //     })
-  //   })
-
-
->>>>>>> cfa50cc5c6969a3055d97e36318bb75fb6c74bd1
-  }
-  
+  name:'Section6'
 }
 </script>
 
 <style scoped>
-  .card-flipper {
-    /* width: 100%; */
-    /* height: 100%; */
-    /* position: absolute; */
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 50%;
-}
-.card-flipper div {
-    /* display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 260px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 140px;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden; */
-}
-.card-flipper .front {
-  /* background: red; */
-}
-.card-flipper .back {
-    /* background: blue; */
-    /* -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg ); */
-}
-.card-flipper.flipped {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-}
 
-<<<<<<< HEAD
-  /* final */
-
-=======
->>>>>>> cfa50cc5c6969a3055d97e36318bb75fb6c74bd1
   .sixth__section {
     display: flex;
     background-color: #000;
