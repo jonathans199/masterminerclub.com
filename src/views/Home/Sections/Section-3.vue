@@ -86,7 +86,7 @@
     padding: 0;
   }
   .third__section img {
-    width: 100%
+    width: 90%;
   }
   .third__section{
     margin-top: -20vh;
