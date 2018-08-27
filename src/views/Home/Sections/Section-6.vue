@@ -8,47 +8,52 @@
               <div class="card-side card-front">
                 <div class="card-img-top card-image-1" alt="Card image cap"> </div>
                 <div class="card-body">
-                  <h5 class="card-title_custom title1">Platinum</h5>
+                  <h5 class="card-title_custom title1">Basic</h5>
                   <p class="card-text card-text_custom">
                     <ul>
-                      <li>$ 1,000 USD MINING PACK</li>
-                      <li>$5 USD X 400 DíAS</li>
+                      <li>RENT. 12% / mes </li>
+                      <li>$1 USD X 450 DÍAS </li>
+                      <li>Total ROI: $450 USD</li>
                     </ul>
                   </p>
-                  <button class="button-adquirir">Adquirir ahora</button>
+                  <div class="sixth__section-button">
+                    <button class="button-adquirir" @click="scroll()">Adquirir ahora</button>
+                  </div>
                 </div>
               </div>    
-              
-              
             </div>
 
             <div class="card card-custom">
               <div class="card-front card-img-top card-image-2" alt="Card image cap"> </div>
               <div class="card-body">
-                <h5 class="card-title_custom title2">gold</h5>
+                <h5 class="card-title_custom title2">Advanced</h5>
                 <p class="card-text card-text_custom">
                   <ul>
-                    <li>$ 1 USD x 450 DíAS</li>
-                    <li>$ 1 USD x 450 DíAS</li>
-                    <li>$ 1 USD x 450 DíAS</li>
+                    <li>RENT. 12% / mes </li>
+                    <li>$2 USD X 500 DÍAS </li>
+                    <li>Total ROI: $1000 USD</li>
                   </ul>
                  </p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="sixth__section-button">
+                  <button class="button-adquirir" @click="scroll()">Adquirir ahora</button>
+                </div>
               </div>
             </div>
 
             <div class="card card-custom">
               <div class="card-img-top card-image-3" alt="Card image cap"> </div>
               <div class="card-body">
-                <h5 class="card-title_custom title3">silver</h5>
+                <h5 class="card-title_custom title3">Pro</h5>
                 <p class="card-text card-text_custom">
                   <ul>
-                    <li>$ 1 USD x 450 DíAS</li>
-                    <li>$ 1 USD x 450 DíAS</li>
-                    <li>$ 1 USD x 450 DíAS</li>
+                    <li>RENT. 15% / mes </li>
+                    <li>$5 USD X 400 DÍAS </li>
+                    <li>Total ROI: $2000 USD</li>
                   </ul>
                  </p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="sixth__section-button">
+                  <button class="button-adquirir" @click="scroll()">Adquirir ahora</button>
+                </div>
               </div>
             </div>
           </div>
@@ -58,13 +63,23 @@
 </template>
 
 <script>
-import jQuery from 'jquery'
+import helper from '@/helpers/functions'
+
 export default {
-  name:'Section6'
+  name:'Section6',
+  methods: {
+    scroll(){
+      helper.goToByScroll('.first__section')
+    }
+  }
 }
 </script>
 
 <style scoped>
+  .sixth__section-button {
+    display: flex;
+    justify-content: center;
+  }
 
   .sixth__section {
     display: flex;
@@ -120,11 +135,11 @@ export default {
   }
 
   .card-image-2 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/assets/img/platinum.jpeg);
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/assets/img/rolex.jpg);
   }
 
   .card-image-3 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(/assets/img/platinum.jpeg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(/assets/img/jet.jpg);
   }
 
   .card-title_custom {

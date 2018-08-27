@@ -39,7 +39,7 @@
               ¿CÓMO FUNCIONA MASTERMINERCLUB? 
             </h1>
             <p>
-              • Cuando te unes a MasterMinerClub con
+              Cuando te unes a MasterMinerClub con
               cualquiera de sus contratos de minería, MMC
               utiliza esos recursos para adquirir
               MASTERNODES. Un potente algoritmo
@@ -48,7 +48,7 @@
               mejores proyectos en los que invertir.
             </p>
             <p>
-              • El 50% de los fondos se invierten en
+              El 50% de los fondos se invierten en
               masternodos, y con ello generar una ganancia
               diaria para nuestros mineros, un 25% se
               distribuye entre nuestros distribuidores a través
@@ -150,7 +150,6 @@
 </style>
 
 <script>
-import jQuery from 'jquery'
 import helper from '@/helpers/functions'
 
 export default {
