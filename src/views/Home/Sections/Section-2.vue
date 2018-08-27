@@ -8,12 +8,6 @@
             <p><strong>MASTERMINERCLUB</strong> es el primer pool de minería de criptomoneda con MASTERNODOS, que permite a cualquier persona u empresa, obtener fantásticos dividendos, sin necesidad de adquirir costosos equipos, asumir elevadas facturas de energía, ni tener conocimientos técnicos. </p>
             <p><b>MMC</b>nace de la necesidad de un grupo de empresarios, de efectuar pagos periódicos de una manera ágil y segura entre continentes, sin tener que depender de la alta volatilidad del precio del BitCoin. Encontrando en los  masternodos monedas con grandes proyectos y fabulosos retornos,  con una tecnología más eficiente y económica.</p>
           </div>
-<<<<<<< HEAD
-        </div>
-      </div>
-    
-=======
->>>>>>> e01b4f4ae1ced1deb4677eff202b027b76f284e4
     </section>
     <!-- <div class="second__section-end"></div> -->
   </div>
