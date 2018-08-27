@@ -7,6 +7,7 @@
         <div class="row col-12">
           <div class="col-6 text-right first__section-content-1" data-aos="fade-right" data-aos-delay="500">
             <div class="sub-text">MASTER MINER CLUB</div>
+            <hr size="120" align="right" width="20%" color="#e0e0e0" margin-right="1rem">  
             <h1>UNETE AHORA</h1>
             <div class="sub-text first__section-description">
               <p>LA FORMA MAS INNOVADORA Y</p>
