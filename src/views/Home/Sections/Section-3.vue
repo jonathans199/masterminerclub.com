@@ -9,7 +9,7 @@
             <p>
               Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
             </p>
-            <button>
+            <button @click="scroll()">
               COMENZAR AHORA
             </button>
           </div>
@@ -28,7 +28,7 @@
             <p>
               Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
             </p>
-            <button>
+            <button @click="scroll()">
               COMENZAR AHORA
             </button>
           </div>
@@ -41,7 +41,7 @@
             <p>
               Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
             </p>
-            <button>
+            <button @click="scroll()">
               COMENZAR AHORA
             </button>
           </div>
@@ -60,7 +60,7 @@
             <p>
               Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
             </p>
-            <button>
+            <button @click="scroll()">
               COMENZAR AHORA
             </button>
           </div>
@@ -133,25 +133,14 @@
 
 <script>
 import jQuery from 'jquery'
+import helper from '@/helpers/functions'
+
 export default {
   name:'Section3',
-
-  // mounted() {
-  //   let cont = () => jQuery("#third-section")
-  //           .css("min-height", jQuery( window ).height())
-
-  //   let cont2 = () => jQuery("#third-section-container")
-  //           .css("min-height", (jQuery( window ).height()))
-  //   jQuery(document).ready(function() {
-  //     cont()
-  //     cont2()
-  //     jQuery( window ).resize(function() {
-  //       cont()
-  //       cont2()
-  //     })
-  //   })
-
-
-  // }
+  methods: {
+    scroll(){
+      helper.goToByScroll('.first__section')
+    }
+  }
 }
 </script>
