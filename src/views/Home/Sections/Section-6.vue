@@ -4,7 +4,7 @@
       <div class=" ">
         <h2>NUESTROS PLANES</h2>
           <div class="card-deck">
-            <div class="card card-custom">
+            <div  class="card card-custom">
               <div class="card-side card-front">
                 <div class="card-img-top card-image-1" alt="Card image cap"> </div>
                 <div class="card-body">
@@ -52,6 +52,18 @@
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
         <!-- <div class="sixth-section-plans card-deck">
@@ -130,6 +142,14 @@
     name:'Section6',
 
   mounted() {
+
+    document.querySelector("#card1").classList.toggle("flip");
+
+      /* 
+      * Holder.js for demo image
+      * Just for demo purpose
+      */
+
               
 
 
@@ -153,8 +173,6 @@
 </script>
 
 <style scoped>
-
-
 
   .sixth__section {
     display: flex;

@@ -3,15 +3,10 @@
     <section class="third__section" >
       <div class="container section3_section" data-aos="fade-up" data-aos-delay="500">
           <div class="">
-            <h1>
-              MASTER NODO?
-            </h1>
-            <p>
-              Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
-            </p>
-            <button>
-              COMENZAR AHORA
-            </button>
+            <h1>MASTER NODO?</h1>
+            <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
+            <p>Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...</p>
+            <button>COMENZAR AHORA</button>
           </div>
           <div class="left-image">
             <img src="/assets/img/section3.png" alt="">
@@ -22,28 +17,18 @@
             <img src="/assets/img/section4.png" alt="">
           </div>
           <div class="">
-            <h1>
-              ANALISYS DE MERCADO
-            </h1>
-            <p>
-              Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
-            </p>
-            <button>
-              COMENZAR AHORA
-            </button>
+            <h1>ANALISYS DE MERCADO</h1>
+            <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
+            <p>Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...</p>
+            <button>COMENZAR AHORA</button>
           </div>
       </div>
       <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
           <div class="">
-            <h1>
-              INVERSIÓN EN MASTERNODOS
-            </h1>
-            <p>
-              Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
-            </p>
-            <button>
-              COMENZAR AHORA
-            </button>
+            <h1>INVERSIÓN EN MASTERNODOS</h1>
+            <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
+            <p>Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...</p>
+            <button>COMENZAR AHORA</button>
           </div>
           <div class="left-image">
             <img src="/assets/img/section5.png" alt="">
@@ -54,15 +39,10 @@
             <img src="/assets/img/section6.png" alt="">
           </div>
           <div class="">
-            <h1>
-              ESTRATEGIA DE INVERSION
-            </h1>
-            <p>
-              Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...
-            </p>
-            <button>
-              COMENZAR AHORA
-            </button>
+            <h1>ESTRATEGIA DE INVERSION</h1>
+            <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
+            <p>Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...</p>
+            <button>COMENZAR AHORA</button>
           </div>
       </div>
     </section>
