@@ -124,7 +124,11 @@
     padding: 0;
   }
   .third__section img {
+<<<<<<< HEAD
     width: 90%
+=======
+    width: 90%;
+>>>>>>> e01b4f4ae1ced1deb4677eff202b027b76f284e4
   }
   .third__section{
     margin-top: -20vh;

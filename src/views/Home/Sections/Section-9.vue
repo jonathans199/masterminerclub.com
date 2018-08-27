@@ -1,10 +1,15 @@
 <template>
 
   <div>
+<<<<<<< HEAD
     <!-- <section class="allocation">
       <div>
+=======
+    <section class="allocation">
+      <div class="token-allocation">
+>>>>>>> e01b4f4ae1ced1deb4677eff202b027b76f284e4
         <h1>TOKEN ALLOCATION</h1>
-        <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
+        <hr size="15" align="center" width="20%" color="#e0e0e0">
         <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aperiam fuga officia voluptatum nemo, mollitia consectetur id vero rem sequi corrupti</h2>
       </div>
       <div class="image-and-text">
@@ -15,12 +20,16 @@
             <li>&#10004; Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
           </ul>
       </div>
+<<<<<<< HEAD
       <div>
 
       </div>
       
   </section> -->
 
+=======
+    </section>
+>>>>>>> e01b4f4ae1ced1deb4677eff202b027b76f284e4
 
   <!-- <section class="before_last">
     <div class="form-custom">
@@ -114,11 +123,21 @@ export default {
   }
 
   .allocation {
-    padding: 10rem 3rem;
+    /* position: relative; */
+    align-content: left;
+    padding: 10rem 5rem;
     background-color: black;
     color: #e0e0e0;
     height: 100%;
   }
+
+  .token-allocation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* max-width: 1000px; */
+    align-items: center;
+  } 
 
   .allocation h1 {
     font-weight: 300;

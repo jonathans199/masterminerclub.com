@@ -1,19 +1,19 @@
 <template>
   <div>
-    <section  id="second-section" class="second__section">
-      <div class="container d-flex align-items-center" id="second-section-container">
-        <div class="row col-12" >
-          <div class="col-5" data-aos="fade-right" data-aos-delay="500">
-            <img src="/assets/img/main_logo.svg" alt="">
+    <section id="second-section" class="second__section">
+          <div class="sub-logo">
+            <img src="/assets/img/main_logo.svg" alt="" data-aos="fade-right" data-aos-delay="500">
           </div>
-          <div class="col-7 text-justify d-flex align-items-center" data-aos="fade-left" data-aos-delay="500">
-            <p>
-              Somos MasterMinerClub un grupo visionarios (inversores, programadores y networkers) que hemos visto una gran oportunidad con el auge y crecimiento que han tenido las Criptomonedas los últimos años, por ese motivo estamos poniendo nuestro conocimiento y experiencia a tu servicio, para juntos crear la anhelada independencia financiera, recibiendo una rentabilidad fija día tras día, además de fabulosos bonos y comisiones, con una herramienta aún desconocida para la mayoría, pero que es el corazón de este mercado, nosotros apostamos por ella como el “siguiente nivel en la minería” (#TheNextLevelMining), hablamos de los MASTERNODOS
-            </p>
+          <div class="text-ju stify" data-aos="fade-left" data-aos-delay="500">
+            <p><strong>MASTERMINERCLUB</strong> es el primer pool de minería de criptomoneda con MASTERNODOS, que permite a cualquier persona u empresa, obtener fantásticos dividendos, sin necesidad de adquirir costosos equipos, asumir elevadas facturas de energía, ni tener conocimientos técnicos. </p>
+            <p><b>MMC</b>nace de la necesidad de un grupo de empresarios, de efectuar pagos periódicos de una manera ágil y segura entre continentes, sin tener que depender de la alta volatilidad del precio del BitCoin. Encontrando en los  masternodos monedas con grandes proyectos y fabulosos retornos,  con una tecnología más eficiente y económica.</p>
           </div>
+<<<<<<< HEAD
         </div>
       </div>
     
+=======
+>>>>>>> e01b4f4ae1ced1deb4677eff202b027b76f284e4
     </section>
     <!-- <div class="second__section-end"></div> -->
   </div>
@@ -22,8 +22,15 @@
 <style scoped>
 
   .second__section{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-content: center;
     position: relative;
-    /* width: 100%; */
+    /* padding: 10rem; */
+    width: 100%;
+
+    
     min-height: 38rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -32,7 +39,10 @@
     background-size: 720px;
     background-position: -40% bottom;
   }
-      
+  
+  .sub-logo {
+    width: 80%;
+  }
 </style>
 
 <script>
