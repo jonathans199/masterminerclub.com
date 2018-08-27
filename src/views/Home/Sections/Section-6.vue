@@ -4,9 +4,15 @@
       <div class=" ">
         <h2>NUESTROS PLANES</h2>
           <div class="card-deck">
+<<<<<<< HEAD
             <div class="card card-flipper" id="card" @click="flip" >
               <div class="front " >
                 <div class="card-img-top card-image-1" alt="Card image cap"></div>
+=======
+            <div  class="card card-custom">
+              <div class="card-side card-front">
+                <div class="card-img-top card-image-1" alt="Card image cap"> </div>
+>>>>>>> cfa50cc5c6969a3055d97e36318bb75fb6c74bd1
                 <div class="card-body">
                   <h5 class="card-title_custom title1">Platinum</h5>
                   <p class="card-text card-text_custom">
@@ -64,6 +70,78 @@
               </div>
             </div>
           </div>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        <!-- <div class="sixth-section-plans card-deck">
+          <div class="card" id="plan-1">
+            <div class="card-body custom-card__body">
+              <div class="text-center">
+                <img src="/assets/img/section7-1.png" alt="">
+              </div>
+              <div class="sixth__section-description">
+                <ul>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card " id="plan-2">
+            <div class="card-body">
+              <div class="text-center">
+                <img src="/assets/img/section7-2.png" alt="">
+              </div>
+              <div class="sixth__section-description">
+                <ul>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="plan-3">
+            <div class="card-body">
+              <div class="text-center">
+                <img src="/assets/img/section7-3.png" alt="">
+              </div>
+              <div class="text-center sixth__section-price">
+                <b>$250</b> / Month
+              </div>
+              <div class="sixth__section-description">
+                <ul>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                  <li>Lorem ipsum, dolor sit amet </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+>>>>>>> cfa50cc5c6969a3055d97e36318bb75fb6c74bd1
       </div>
     </div>
   </section>
@@ -71,6 +149,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import $ from 'jquery'
 
 export default {
@@ -81,6 +160,41 @@ export default {
       // $('.front').toggleClass('d-none')
       // $('.back').addClass('d-block')
     }
+=======
+
+  import jQuery from 'jquery'
+  export default {
+    
+    name:'Section6',
+
+  mounted() {
+
+    document.querySelector("#card1").classList.toggle("flip");
+
+      /* 
+      * Holder.js for demo image
+      * Just for demo purpose
+      */
+
+              
+
+
+  //   let cont = () => jQuery("#sixth-section")
+  //           .css("max-height", (jQuery( window ).height()))
+
+  //   let cont2 = () => jQuery("#sixth-section-container")
+  //           .css("min-height", (jQuery( window ).height()))
+  //   jQuery(document).ready(function() {
+  //     cont()
+  //     cont2()
+  //     jQuery( window ).resize(function() {
+  //       cont()
+  //       cont2()
+  //     })
+  //   })
+
+
+>>>>>>> cfa50cc5c6969a3055d97e36318bb75fb6c74bd1
   }
   
 }
@@ -133,8 +247,11 @@ export default {
     transform: rotateY( 180deg );
 }
 
+<<<<<<< HEAD
   /* final */
 
+=======
+>>>>>>> cfa50cc5c6969a3055d97e36318bb75fb6c74bd1
   .sixth__section {
     display: flex;
     background-color: #000;
