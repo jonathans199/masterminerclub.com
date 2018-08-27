@@ -44,17 +44,17 @@
       <div class="col-4 d-flex justify-content-center align-items-center  menu__link">
         <!-- Right aligned nav items -->
         <b-navbar-nav class="list-inline" >
-          <b-nav-item class="list-inline-item menu__link-item-1">
-            REGISTER
-          </b-nav-item>
-          <b-nav-item class="list-inline-item menu__link-item-2">
-            SIGN IN
-          </b-nav-item>
+          <li class="list-inline-item menu__link-item-1">
+            <a class="nav-link" href="https://app.masterminerclub.biz/#/register">REGISTER</a>
+          </li>
+          <li class="list-inline-item menu__link-item-2">
+            
+            <a class="nav-link" href="https://app.masterminerclub.biz/#/login">SIGN IN</a>
+          </li>
            <span class="menu__logo" onclick="openNav()">MENU <span class="menu-icon">&#9776;</span></span>
         </b-navbar-nav> 
       </div>
     </div>
-    
   </nav>
 </template>
 

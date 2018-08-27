@@ -18,22 +18,23 @@
           </div>
           <div class="col-6  d-flex justify-content-center first__section-content-2" data-aos="flip-left" data-aos-delay="900">
             <div class="col-12">
-              <form class="first__section-form">
+              <form @submit="register" class="first__section-form">
                 <div class="form-group">
                   <h2 class="form-header">registrate hoy!</h2>
-                  <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email">
+                  <input v-model="form.email" type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control"  placeholder="Username">
+                  <input v-model="form.username" type="text" class="form-control"  placeholder="Username" required>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control"  placeholder="Password">
+                  <input v-model="form.password" type="password" class="form-control"  placeholder="Password">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control"  placeholder="Codigo sponsor (opcional)">
+                  <input v-model="form.parent_uuid" type="text" class="form-control"  placeholder="Codigo sponsor (opcional)" required>
                 </div>
                 <div class="form-group">
-                  <button type="submit" class="float-right">ENVIAR</button>
+                  <button v-if="!loading" type="submit" class="float-right">ENVIAR</button>
+                  <button v-if="loading" type="submit" class="float-right">LOADING <i class="fa fa-spinner fa-spin" /></button>
                 </div>
                 <p class="first__section-form-terms">
                   By clicking “Sign up for Master Miner Club, you agree to our terms of service and privacy statement.
@@ -51,14 +52,28 @@
 <script>
 import Menu from '@/components/Menu'
 import jQuery from 'jquery'
+import axios from 'axios'
+
 export default {
-  props: ['menu'],
   name:'Section1',
   components:{ 
     Menu
   },
 
-  mounted() { 
+  data(){
+    return {
+      props: {
+        scroll: Object
+      },
+      loading: false,
+      form: {},
+      api: "https://api.masterminerclub.biz/api/v1/signup"
+    }
+  },
+
+  mounted() {
+    
+    // console.log(this.props.scroll(1))
     let cont = () => jQuery("#first-section")
             .css("min-height", jQuery( window ).height())
 
@@ -72,6 +87,37 @@ export default {
         cont2()
       })
     })
+  },
+
+  methods: {
+    register(evt){
+      evt.preventDefault();
+      this.loading = true
+      
+      axios.post(this.api, this.form)
+      .then(response => {
+        this.loading = false
+        this.$swal({
+          title: 'Registration completed!',
+          text: 'We have sent you an email. Please follow the activation link.'
+        })
+        this.resetForm()
+      })
+      .catch(err => {
+        this.loading = false
+        err.response.data.map((m,index ) => {
+          this.$toasted.error(m, {
+            position:'top-right', 
+            duration: 5000,
+            type: 'success'
+          })
+        })
+      })
+    },
+
+    resetForm(){
+      this.form = {}
+    }
   }
 }
 </script>

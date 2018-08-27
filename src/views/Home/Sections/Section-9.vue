@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <section class="allocation">
+    <!-- <section class="allocation">
       <div>
         <h1>TOKEN ALLOCATION</h1>
         <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
@@ -19,10 +19,10 @@
 
       </div>
       
-  </section>
+  </section> -->
 
 
-  <section class="before_last">
+  <!-- <section class="before_last">
     <div class="form-custom">
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group id="exampleInputGroup1"
@@ -65,7 +65,7 @@
         <b-button type="reset" variant="danger">Reset</b-button>
       </b-form>
     </div>
-  </section>
+  </section> -->
   </div>
 
 </template>
