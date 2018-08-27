@@ -41,10 +41,13 @@
 
 <script>
 import jQuery from 'jquery'
+
 export default {
+  
   name:'Section2',
 
-  // mounted() {
+  mounted() {
+    
   //   let cont = () => jQuery("#second-section")
   //           .css("max-height", (jQuery( window ).height() -600))
 
@@ -60,6 +63,6 @@ export default {
   //   })
 
 
-  // }
+  }
 }
 </script>

@@ -1,8 +1,8 @@
 <template>
 
   <div>
-    <section class="allocation">
-      <div class="token-allocation">
+    <!-- <section class="allocation">
+      <div>
         <h1>TOKEN ALLOCATION</h1>
         <hr size="15" align="center" width="20%" color="#e0e0e0">
         <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aperiam fuga officia voluptatum nemo, mollitia consectetur id vero rem sequi corrupti</h2>
@@ -15,9 +15,14 @@
             <li>&#10004; Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
           </ul>
       </div>
-    </section>
+      <div>
 
-  <section class="before_last">
+      </div>
+      
+  </section> -->
+
+
+  <!-- <section class="before_last">
     <div class="form-custom">
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group id="exampleInputGroup1"
@@ -60,7 +65,7 @@
         <b-button type="reset" variant="danger">Reset</b-button>
       </b-form>
     </div>
-  </section>
+  </section> -->
   </div>
 
 </template>

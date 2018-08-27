@@ -3,10 +3,15 @@
     <section class="third__section" >
       <div class="container section3_section" data-aos="fade-up" data-aos-delay="500">
           <div class="">
-            <h1>MASTER NODO?</h1>
-            <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
-            <p>Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...</p>
-            <button>COMENZAR AHORA</button>
+            <h1>
+              ¿MASTER NODO?
+            </h1>
+            <p>
+              La función principal de los Masternodos es retransmitir transacciones a través de la red, dar anonimato a los fondos y dar gobernabilidad a la moneda. A cambio de proporcionar estos servicios los Masternodos reciben una parte de la recompensa de cada bloque minado.
+            </p>
+            <button @click="scroll()">
+              COMENZAR AHORA
+            </button>
           </div>
           <div class="left-image">
             <img src="/assets/img/section3.png" alt="">
@@ -17,18 +22,43 @@
             <img src="/assets/img/section4.png" alt="">
           </div>
           <div class="">
-            <h1>ANALISYS DE MERCADO</h1>
-            <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
-            <p>Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...</p>
-            <button>COMENZAR AHORA</button>
+            <h1>
+              ANALISIS DE MERCADO
+            </h1>
+            <p>
+              Contamos con algoritmos de ultima generacion, los cuales nos permiten identificar los masternodos mas rentables en el mercado.
+            </p>
+            <button @click="scroll()">
+              COMENZAR AHORA
+            </button>
           </div>
       </div>
       <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
           <div class="">
-            <h1>INVERSIÓN EN MASTERNODOS</h1>
-            <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
-            <p>Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...</p>
-            <button>COMENZAR AHORA</button>
+            <h1>
+              ¿CÓMO FUNCIONA MASTERMINERCLUB? 
+            </h1>
+            <p>
+              • Cuando te unes a MasterMinerClub con
+              cualquiera de sus contratos de minería, MMC
+              utiliza esos recursos para adquirir
+              MASTERNODES. Un potente algoritmo
+              diseñado por nuestro equipo de programación,
+              rastrea el COINMARKETCAP en busca de los
+              mejores proyectos en los que invertir.
+            </p>
+            <p>
+              • El 50% de los fondos se invierten en
+              masternodos, y con ello generar una ganancia
+              diaria para nuestros mineros, un 25% se
+              distribuye entre nuestros distribuidores a través
+              de su plan de compensación, y el 25% restante
+              se destina para el mantenimiento y expansión de
+              MMC. 
+            </p>
+            <button @click="scroll()">
+              COMENZAR AHORA
+            </button>
           </div>
           <div class="left-image">
             <img src="/assets/img/section5.png" alt="">
@@ -39,10 +69,18 @@
             <img src="/assets/img/section6.png" alt="">
           </div>
           <div class="">
-            <h1>ESTRATEGIA DE INVERSION</h1>
-            <hr size="15" align="left" width="20%" color="#e0e0e0" margin-left="1rem">
-            <p>Somos MasterMinerClub un grupo de visionarios (inversores, programadores y networkers) que hemos...</p>
-            <button>COMENZAR AHORA</button>
+            <h1>
+              ¿CÓMO GANO CON MASTERMINERCLUB?
+            </h1>
+            <ul>
+              <li>ROI</li>
+              <li>INICIO RÁPIDO</li>
+              <li>BINARIO</li>
+              <li>LIFESTYLE</li>
+            </ul>
+            <button @click="scroll()">
+              COMENZAR AHORA
+            </button>
           </div>
       </div>
     </section>
@@ -86,7 +124,7 @@
     padding: 0;
   }
   .third__section img {
-    width: 90%;
+    width: 90%
   }
   .third__section{
     margin-top: -20vh;
@@ -113,25 +151,14 @@
 
 <script>
 import jQuery from 'jquery'
+import helper from '@/helpers/functions'
+
 export default {
   name:'Section3',
-
-  // mounted() {
-  //   let cont = () => jQuery("#third-section")
-  //           .css("min-height", jQuery( window ).height())
-
-  //   let cont2 = () => jQuery("#third-section-container")
-  //           .css("min-height", (jQuery( window ).height()))
-  //   jQuery(document).ready(function() {
-  //     cont()
-  //     cont2()
-  //     jQuery( window ).resize(function() {
-  //       cont()
-  //       cont2()
-  //     })
-  //   })
-
-
-  // }
+  methods: {
+    scroll(){
+      helper.goToByScroll('.first__section')
+    }
+  }
 }
 </script>
