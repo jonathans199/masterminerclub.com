@@ -4,38 +4,54 @@
       <div class=" ">
         <h2>NUESTROS PLANES</h2>
           <div class="card-deck">
-            <div class="card card-1">
-              <div class="card-img-top" alt="Card image cap"> </div>
+            <div class="card card-custom">
+              <div class="card-side card-front">
+                <div class="card-img-top card-image-1" alt="Card image cap"> </div>
+                <div class="card-body">
+                  <h5 class="card-title_custom title1">Platinum</h5>
+                  <p class="card-text card-text_custom">
+                    <ul>
+                      <li>$ 1,000 USD MINING PACK</li>
+                      <li>$5 USD X 400 DíAS</li>
+                    </ul>
+                  </p>
+                  <button class="button-adquirir">Adquirir ahora</button>
+                </div>
+              </div>
+              
+              <div class="card-back"></div>
+              
+            </div>
+            <div class="card card-custom card-2">
+              <div class="card-front card-img-top card-image-2" alt="Card image cap"> </div>
               <div class="card-body">
-                <h5 class="card-title_custom">BASIC</h5>
-                <p class="card-text">
+                <h5 class="card-title_custom title2">gold</h5>
+                <p class="card-text card-text_custom">
                   <ul>
                     <li>$ 1 USD x 450 DíAS</li>
                     <li>$ 1 USD x 450 DíAS</li>
                     <li>$ 1 USD x 450 DíAS</li>
                   </ul>
-                  This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                 </p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
-            <div class="card card-2">
-              <img class="card-img-top" src="/assets/img/section7-2.png" alt="Card image cap">
+
+            <div class="card card-custom card-3">
+              <div class="card-img-top card-image-3" alt="Card image cap"> </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card card-3">
-              <img class="card-img-top" src="/assets/img/section7-3.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <h5 class="card-title_custom title3">silver</h5>
+                <p class="card-text card-text_custom">
+                  <ul>
+                    <li>$ 1 USD x 450 DíAS</li>
+                    <li>$ 1 USD x 450 DíAS</li>
+                    <li>$ 1 USD x 450 DíAS</li>
+                  </ul>
+                 </p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
-
 
 
         <!-- <div class="sixth-section-plans card-deck">
@@ -95,15 +111,28 @@
 
       </div>
     </div>
+    
+
+
   </section>
+
+  
+
+
+
 </template>
 
 <script>
-import jQuery from 'jquery'
-export default {
-  name:'Section6',
 
-  // mounted() {
+  import jQuery from 'jquery'
+  export default {
+    
+    name:'Section6',
+
+  mounted() {
+              
+
+
   //   let cont = () => jQuery("#sixth-section")
   //           .css("max-height", (jQuery( window ).height()))
 
@@ -119,17 +148,18 @@ export default {
   //   })
 
 
-  // }
+  }
 }
 </script>
 
 <style scoped>
 
 
+
   .sixth__section {
     display: flex;
     background-color: #000;
-    color: white;
+    color: #eee;
     padding: 10rem 0
   }
 
@@ -138,17 +168,61 @@ export default {
     list-style-type: none;
     font-size: 15px;
   }
+
+  .card-custom {
+    perspective: 150rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden; 
+    position: relative;
+    background-color: #133c5e;
+    border-radius: .5px;  
+  }
+
+  .card__side--front {
+    background-color: white;
+    z-index: 2;
+  }
+
+
+
+    /* .card-custom:hover {
+      transform: rotateY(-180deg);
+    }
+
+    .card-custom-back:hover {
+      transform: rotateY(0);
+    } */
   
   .card-img-top {
     margin: 0;
-    height: 18rem;
+    height: 15rem;
     background-size: cover;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/assets/img/basic_plan.jpg);
+  }
+   .card-image-1 { 
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/assets/img/platinum.jpeg);
+  }
+
+   .card-image-2 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/assets/img/platinum.jpeg);
+
+  }
+
+  .card-image-3 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(/assets/img/platinum.jpeg);
   }
 
   .card-title_custom {
+    top: 12rem;
+    right: 1rem;
+    /* width: 45%; */
     font-size: 2.8rem;
     padding: 8px;
     font-weight: 300;
@@ -156,13 +230,40 @@ export default {
     text-align: right;
     color: #fff;
     position: absolute;
-    top: rem;
-    right: 1rem;
-    width: 45%;
+  }
+  
+  .title1 {
     background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
-    
   }
 
+  .title2 {
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+  }
+
+  .title3 {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+  }
+
+  .card-text_custom {
+    padding: 1rem;
+  }
+
+   .card-text_custom ul {
+    list-style: none;
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .card-text_custom ul li {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .card-text_custom li:not(:last-child) {
+    border-bottom: 1px solid rgba(228,230,233,0.2);
+  }
 
   .sixth__section-price {
     margin-top: 35px
@@ -172,22 +273,26 @@ export default {
     color: #218ffa;
   }
 
-  .card-1 {
-    background-color: #133c5e;
-    border-radius: .5px;
+  .button-adquirir {
     
+    background-color: transparent;
+    color: #8ebbe8;
+    border: 1px solid #8a8a8a;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 1px;
   }
 
-  .card-2 {
-    background-color: #e7eeff;
-    border-radius: .5px;
+  .button-adquirir:hover {
+    border: 1px solid #3e9fef;
+    background-color: #3e9fef;
+    color: #fff !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
   }
-
-  .card-3 {
-    background-color: #133c5e;
-    border-radius: .5px;
-  }
-
 
   /* from starter
 
