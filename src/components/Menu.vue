@@ -50,7 +50,7 @@
         <div>
           <a class="menu__link-item-2" href="https://app.masterminerclub.biz/#/login">SIGN IN</a>
           </div>
-        <div class="">
+        <div class="menu__link-item-3">
           <a class="menu__button" onclick="openNav()"> MENU
             <img src="/assets/img/menu-button.svg" alt=""></a>
         </div>
@@ -176,7 +176,7 @@ export default {
   } */
 
   .menu__link-item-3{
-    padding-left: 30px;
+    /* padding-left: 30px; */
     /* padding-right: 30px */
   }
 
@@ -218,8 +218,13 @@ export default {
     padding: 1.5rem;
   }
 
+  .menu__button {
+    padding-left: 2rem;
+  }
+
   .menu__button img {
     width: 1.5rem;
+    margin: 0 !important;
   }
 
   .menu-icon {
@@ -237,7 +242,6 @@ export default {
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-
 }
 
 .overlay-content {
@@ -276,12 +280,21 @@ export default {
     }
     .menu__logo {
       max-width: 400px;
-      width: 50%;
+      width: 100%;
     }
 
-    .list-inline {
-    flex-direction: row;
-  }
+    .menu__link-item-1 {
+      display: none;
+    }
+
+    .menu__link-item-2 {
+      display: none;
+    }
+
+    .menu__link-item-3{
+      padding-left: 8rem;
+    }
+
 
   }
 
