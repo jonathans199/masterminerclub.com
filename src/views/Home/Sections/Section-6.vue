@@ -88,6 +88,15 @@ export default {
     padding: 10rem 0
   }
 
+  .card-deck {
+    flex-direction: row;
+  }
+
+  @media (max-width: 1000px){
+    .card-deck {
+      flex-direction: column;
+    }
+  }
 
   .sixth__section li {
     list-style-type: none;
