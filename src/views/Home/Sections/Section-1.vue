@@ -96,6 +96,7 @@ export default {
       
       axios.post(this.api, this.form)
       .then(response => {
+        // response.json()
         this.loading = false
         this.$swal({
           title: 'Registration completed!',
@@ -105,7 +106,7 @@ export default {
       })
       .catch(err => {
         this.loading = false
-        err.response.data.map((m,index ) => {
+        err.response.data.map((m) => {
           this.$toasted.error(m, {
             position:'top-right', 
             duration: 5000,

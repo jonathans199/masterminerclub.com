@@ -12,7 +12,6 @@
               <li>ABOUT</li>
               <li>LOGIN</li>
               <li>REGISTER</li>
-              <li>CONTACT US</li>
             </ul>
           </div>
         </div>
