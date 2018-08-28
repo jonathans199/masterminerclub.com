@@ -135,8 +135,9 @@
   @media (max-width: 1000px){
     .section3_section {
       flex-direction: column;
-      margin: 10rem 0;
     }
+
+    
   }
 
 </style>
