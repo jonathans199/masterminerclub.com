@@ -13,7 +13,9 @@
       <!-- overlay Menu end -->
     <div style="display:flex">
       <div class="col-3 d-flex justify-content-center align-items-center">
-        <img class="menu__logo" src="/assets/img/logo_masterminer_color.svg" alt="">
+        <router-link to="/">
+          <img class="menu__logo" src="/assets/img/logo_masterminer_color.svg" alt="">
+        </router-link>
       </div>
       <div class="menu__prices col-5 d-flex justify-content-start align-items-center ">
         <span>

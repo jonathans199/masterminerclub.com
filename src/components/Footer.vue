@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class=" footer__template">
+    <footer class="footer__template">
       <div class="container">
         <div class="row">
           <div class="col-6">
@@ -8,10 +8,10 @@
           </div>
           <div class="col-6 d-flex justify-content-center align-items-center">
             <ul>
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>LOGIN</li>
-              <li>REGISTER</li>
+              <li><a class="footer__template-link" @click="scroll('.first__section')">HOME</a></li>
+              <li><a class="footer__template-link" @click="scroll('.second__section')">ABOUT</a></li>
+              <li><a class="footer__template-link" @click="scroll()">LOGIN</a></li>
+              <li><a class="footer__template-link" @click="scroll()">REGISTER</a></li>
             </ul>
           </div>
         </div>
@@ -19,8 +19,25 @@
     </footer>
   </div>
 </template>
+<script>
+import helper from '@/helpers/functions'
+
+export default {
+  methods: {
+    scroll(id){
+      helper.goToByScroll(id)
+    }
+  }
+}
+</script>
 
 <style>
+
+  .footer__template-link {
+    color: white !important;
+    cursor: pointer;
+  }
+
   .footer__template-logo {
     width: 200px
   }

@@ -37,7 +37,8 @@
                   <button v-if="loading" type="submit" class="float-right">LOADING <i class="fa fa-spinner fa-spin" /></button>
                 </div>
                 <p class="first__section-form-terms">
-                  By clicking “Sign up for Master Miner Club, you agree to our terms of service and privacy statement.
+                  By clicking “Sign up for Master Miner Club, you agree to our 
+                  <router-link to="/terms" class="terms__link">terms of service and privacy</router-link> statement.
                 </p>
               </form>
             </div>
@@ -123,8 +124,11 @@ export default {
 </script>
 
 <style scoped>
-
- #first-section {
+  .terms__link {
+    color: white;
+    text-decoration: underline
+  }
+  #first-section {
     /* display: flex; */
     background-color: #000002;
     background-image: url(../../../assets/img/blockchain.jpg);
