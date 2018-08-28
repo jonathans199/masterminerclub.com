@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="image_overlay"></div>
     <section id="first-section" class="first__section">
+      <div class="image_overlay"></div>
       <Menu/>
-      <div class="container d-flex align-items-center" id="first-section-container">
-        <div class="row col-12">
-          <div class="col-6 text-right first__section-content-1" data-aos="fade-right" data-aos-delay="500">
+      <div class="container">
+        <div class="cover-caption">
+          <div class="text-right first__section-content-1" data-aos="fade-right" data-aos-delay="500">
             <div class="sub-text">MASTER MINER CLUB</div>
             <hr size="120" align="right" width="20%" color="#e0e0e0" margin-right="1rem">  
             <h1>UNETE AHORA</h1>
@@ -16,8 +16,8 @@
             </div> 
             <h3>INICIAR <i class="fa fa-arrow-right"></i></h3>
           </div>
-          <div class="col-6  d-flex justify-content-center first__section-content-2" data-aos="flip-left" data-aos-delay="900">
-            <div class="col-12">
+          <div class="first__section-content-2" data-aos="flip-left" data-aos-delay="900">
+            <div class="">
               <form @submit="register" class="first__section-form">
                 <div class="form-group">
                   <h2 class="form-header">registrate hoy!</h2>
@@ -45,7 +45,6 @@
         </div> 
       </div>
     </section>
-    
   </div>
 </template>
 
@@ -124,6 +123,49 @@ export default {
 </script>
 
 <style scoped>
+
+ #first-section {
+    /* display: flex; */
+    background-color: #000002;
+    background-image: url(../../../assets/img/blockchain.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center 301px;
+    background-repeat: no-repeat;
+  }
+
+ .image_overlay {
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+    .first__section {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .cover-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+    /* color: #a3a3a3; */
+    font-weight: 100;
+    letter-spacing: 3px;
+  }
+
   .first__section-form-terms{
     /* padding-top: 10px; */
     font-size: 10px
@@ -152,16 +194,16 @@ export default {
   }
 
   .first__section-content-1{
-    margin-right: 50px
+    /* margin-right: -9rem; */
   }
 
   .first__section-content-2{
     border-radius:1px !important;
-    left: 1rem;
+    /* left: 1rem; */
     max-width: 40%;
     min-height: 300px;
     background-color: #025385;
-    padding: 20px
+    padding: 20px;
   }
   
   .first__section-content-1 h3 {
@@ -184,44 +226,21 @@ export default {
     margin-bottom: 0px
   }
 
-  .first__section {
-    color: #fff;
-    font-size: 18px;
-  }
-
-  #first-section {
-    background-color: #000002;
-    background-image: url(../../../assets/img/blockchain.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position: center 301px;
-    background-repeat: no-repeat;
-  }
-
-  .image_overlay {
-      opacity: .4;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #000;
-      overflow: hidden;
-      z-index: 0;
-  }
-
-  .sub-text {
-    font-size: 1rem;
-    color: #a3a3a3;
-    font-weight: 100;
-    letter-spacing: 3px;
-  }
-
   .form-header {
     letter-spacing: 1px;
     font-weight: 100;
     text-align: center;
-    
   }
 
+  @media (max-width: 1000px){
+    .cover-caption {
+      flex-direction: column;
+    }
+
+    .first__section-content-2 {
+      max-width: 85%;
+      margin-bottom: 10rem;
+    }
+      
+  }
 </style>
