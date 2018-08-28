@@ -35,26 +35,46 @@
           </div>
       </div>
       <div class="container section3_section" data-aos="fade-up" data-aos-delay="200">
-           <div class="left-image">
-            <img src="/assets/img/section6.png" alt="">
-          </div>
-          <div class="">
-            <h1>¿CÓMO GANO CON MASTERMINERCLUB?</h1>
-            <ul>
-              <li>ROI</li>
-              <li>INICIO RÁPIDO</li>
-              <li>BINARIO</li>
-              <li>LIFESTYLE</li>
-            </ul>
-            <button @click="scroll()">COMENZAR AHORA</button>
-          </div>
+        <div class="left-image">
+          <img src="/assets/img/section6.png" alt="">
+        </div>
+        <div class="">
+          <h1>
+            ¿CÓMO GANO CON MASTERMINERCLUB?
+          </h1>
+          <ul>
+            <li>ROI</li>
+            <li>INICIO RÁPIDO</li>
+            <li>BINARIO</li>
+            <li>LIFESTYLE</li>
+          </ul>
+
+          <a class="section3_section-button" href="/assets/pdf/MasterMinerClubES.V2.pdf" target="_blank" >
+            PRESENTACIÓN <img class="section3_section-img" src="/assets/img/pdf.svg" />
+          </a>
+        </div>
       </div>
     </section>
-    
   </div>
 </template>
 
 <style scoped>
+  .section3_section-button {
+    margin-top: 35px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    background-color: transparent;
+    color: #8ebbe8;
+    border: 1px solid #8a8a8a;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 1px
+  }
+
+  .section3_section-img {
+    width: 35px !important
+  }
+
   .third__section button{
     background-color: transparent;
     color: #8ebbe8;
