@@ -39,18 +39,18 @@
   }
 
 @media (max-width: 1000px){
-    .second__section {
-      background: none;
-    }
-    
-    .second__section-caption {
-      flex-direction: column;
-      }
-
-    .sub-logo {
-      width: 50%;
-    }      
+  .second__section {
+    background: none;
   }
+  
+  .second__section-caption {
+    flex-direction: column;
+    }
+
+  .sub-logo {
+    width: 50%;
+  }      
+}
 
 </style>
 

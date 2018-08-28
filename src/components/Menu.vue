@@ -1,18 +1,18 @@
 <template>
   <nav id="menu">
-      <!-- overlay Menu -->
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-        </div>
-      <!-- overlay Menu end -->
+    <!-- overlay Menu -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <!-- overlay Menu end -->
     <div style="display:flex">
-      <div class="col-3 d-flex justify-content-center align-items-center">
+      <div class="col-3 ">
         <router-link to="/">
           <img class="menu__logo" src="/assets/img/logo_masterminer_color.svg" alt="">
         </router-link>
@@ -26,6 +26,7 @@
             ({{prices[0]['percent_change_24h']}})
           </p>
         </span>
+
         <span>
           <p>{{prices[1]['symbol']}}USD</p>
           <p>${{parseFloat(prices[1]['price_usd']).toFixed(2)}}</p>
@@ -34,6 +35,7 @@
             ({{prices[1]['percent_change_24h']}})
           </p>
         </span>
+
         <span>
           <p>{{prices[6]['symbol']}}USD</p>
           <p>${{parseFloat(prices[6]['price_usd']).toFixed(2)}}</p>
@@ -55,21 +57,6 @@
             <img src="/assets/img/menu-button.svg" alt=""></a>
         </div>
       </div>
-
-      <!-- <div class=" col-sm-4 d-flex justify-content-center align-items-center">
-        <! Right aligned nav items
-        <b-navbar-nav class="list-inline" >
-          <li class="list-inline-item menu__link-item-1">
-            <a class="nav-link" href="https://app.masterminerclub.biz/#/register">REGISTER</a>
-          </li>
-          <li class="list-inline-item menu__link-item-2">
-            <a class="nav-link" href="https://app.masterminerclub.biz/#/login">SIGN IN</a>
-          </li>
-          <li class="list-inline-item menu__link-item-3">
-           <span class="menu__logo" onclick="openNav()">MENU <span class="menu-icon">&#9776;</span></span>
-           </li>
-        </b-navbar-nav> 
-      </div> -->
     </div>
   </nav>
 </template>
@@ -167,14 +154,6 @@ export default {
 
   }
 
-  /* .menu__link-item-1:hover a, .menu__link-item-2:hover a {
-    color: #ffffff !important;
-  } */
-
-  /* .menu__link-item-1 a:hover, .menu__link-item-2 a:hover {
-    color: #ffffff !important;
-  } */
-
   .menu__link-item-3{
     /* padding-left: 30px; */
     /* padding-right: 30px */
@@ -184,7 +163,6 @@ export default {
     font-size: 23px
   }
 
-  
 
   .list-inline {
     display: inline;
@@ -280,7 +258,7 @@ export default {
     }
     .menu__logo {
       max-width: 400px;
-      width: 100%;
+      width: 200px;
     }
 
     .menu__link-item-1 {
