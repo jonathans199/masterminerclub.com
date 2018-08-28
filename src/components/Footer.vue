@@ -8,10 +8,10 @@
           </div>
           <div class="col-6 d-flex justify-content-center align-items-center">
             <ul>
-              <li><a class="footer__template-link" @click="scroll('.first__section')">HOME</a></li>
+              <li><a class="footer__template-link" @click="scroll('#first-section')">HOME</a></li>
               <li><a class="footer__template-link" @click="scroll('.second__section')">ABOUT</a></li>
-              <li><a class="footer__template-link" @click="scroll()">LOGIN</a></li>
-              <li><a class="footer__template-link" @click="scroll()">REGISTER</a></li>
+              <li><a class="footer__template-link" target="_blank" href="https://app.masterminerclub.biz/#/login" >LOGIN</a></li>
+              <li><a class="footer__template-link" target="_blank" href="https://app.masterminerclub.biz/#/register" >REGISTER</a></li>
             </ul>
           </div>
         </div>
