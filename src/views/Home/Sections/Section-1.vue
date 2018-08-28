@@ -1,11 +1,10 @@
 <template>
   <div>
-    <section id="first-section" class="first__section">
+    <section id="first-section">
       <div class="image_overlay"></div>
       <Menu/>
-      <div class="container">
-        <div class="cover-caption">
-          <div class="text-right first__section-content-1" data-aos="fade-right" data-aos-delay="500">
+        <div class="cover-caption container">
+          <div class="first__section-content-1" data-aos="fade-right" data-aos-delay="500">
             <div class="sub-text">MASTER MINER CLUB</div>
             <hr size="120" align="right" width="20%" color="#e0e0e0" margin-right="1rem">  
             <h1>UNETE AHORA</h1>
@@ -14,7 +13,7 @@
               <p>LUCRATIVA DE MINAR</p>
               <p>CRYPTOMONEDA</p>
             </div> 
-            <h3>INICIAR <i class="fa fa-arrow-right"></i></h3>
+            <h3 id="iniciar">INICIAR <i class="fa fa-arrow-right"></i></h3>
           </div>
           <div class="first__section-content-2" data-aos="flip-left" data-aos-delay="900">
             <div class="">
@@ -44,7 +43,6 @@
             </div>
           </div>
         </div> 
-      </div>
     </section>
   </div>
 </template>
@@ -136,9 +134,11 @@ export default {
     background-size: cover;
     background-position: center 301px;
     background-repeat: no-repeat;
+    color: #fff;
+    font-size: 18px;
   }
 
- .image_overlay {
+  .image_overlay {
     opacity: .4;
     position: absolute;
     top: 0;
@@ -150,17 +150,12 @@ export default {
     z-index: 0;
   }
 
-    .first__section {
-    color: #fff;
-    font-size: 18px;
-  }
-
   .cover-caption {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    height: 100%;
+    /* height: 100vh; */
+    margin-top: 8rem;
   }
 
   .sub-text {
@@ -197,8 +192,10 @@ export default {
     cursor: pointer;
   }
 
-  .first__section-content-1{
-    /* margin-right: -9rem; */
+  .first__section-content-1 {
+    text-align: right;
+    margin-right: 5rem;
+    z-index: 10;
   }
 
   .first__section-content-2{
@@ -239,6 +236,21 @@ export default {
   @media (max-width: 1000px){
     .cover-caption {
       flex-direction: column;
+      margin-top: 0;
+    }
+
+    .first__section-content-1{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 6rem;
+      }
+    
+    #iniciar {
+      display: none;
+
+    }
+    hr {
+      display: none;
     }
 
     .first__section-content-2 {

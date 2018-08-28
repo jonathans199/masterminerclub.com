@@ -26,12 +26,13 @@
 }
   
 .second__section-caption {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  align-content: center;
-  width: 100%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+    width: 100%;
+    margin-top: -10rem;
+  }
 
   .sub-logo {
     width: 100%;

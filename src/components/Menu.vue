@@ -53,7 +53,9 @@
             
             <a class="nav-link" href="https://app.masterminerclub.biz/#/login">SIGN IN</a>
           </li>
+          <li>
            <span class="menu__logo" onclick="openNav()">MENU <span class="menu-icon">&#9776;</span></span>
+           </li>
         </b-navbar-nav> 
       </div>
     </div>
@@ -97,10 +99,9 @@ export default {
 </script>
      
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-#menu {
+  #menu {
     color: #8a8a8a ;
     border-bottom: 1px solid rgba(228,230,233,0.2);
     height: 7.5rem;
@@ -239,6 +240,17 @@ export default {
     right: 45px;
     font-size: 60px;
 }
+
+@media (max-width: 1000px){
+    .menu__prices {
+      display: none !important;
+    }
+    .menu__logo {
+      max-width: 400px;
+      width: 100%;
+    }
+
+  }
 
 
 </style>
