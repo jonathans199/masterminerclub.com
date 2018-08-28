@@ -3,10 +3,10 @@
     <footer class="footer__template">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
             <img class="footer__template-logo" src="/assets/img/logo_masterminer_color.svg" alt="">
           </div>
-          <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
             <ul>
               <li><a class="footer__template-link" @click="scroll('#first-section')">HOME</a></li>
               <li><a class="footer__template-link" @click="scroll('.second__section')">ABOUT</a></li>
@@ -32,7 +32,18 @@ export default {
 </script>
 
 <style>
+  .footer__template, .row {
+    flex-direction: row;
+  }
 
+  @media (max-width: 1000px){
+    .footer__template, .row {
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 20px
+    }
+  }
+      
   .footer__template-link {
     color: white !important;
     cursor: pointer;
