@@ -14,24 +14,24 @@
 
 <style scoped>
 
-  .second__section{
-    display: flex;
-    min-height: 43rem;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    background: transparent url("/assets/img/grey.png");
-    background-repeat: no-repeat;
-    background-size: 720px;
-    background-position: -40% bottom;
+.second__section{
+  display: flex;
+  min-height: 43rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background: transparent url("/assets/img/grey.png");
+  background-repeat: no-repeat;
+  background-size: 720px;
+  background-position: -40% bottom;
 }
   
 .second__section-caption {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    align-content: center;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  align-content: center;
+  width: 100%;
+}
 
   .sub-logo {
     width: 100%;

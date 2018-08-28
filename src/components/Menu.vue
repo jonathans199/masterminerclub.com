@@ -13,9 +13,11 @@
       <!-- overlay Menu end -->
     <div style="display:flex">
       <div class="col-3 d-flex justify-content-center align-items-center">
-        <img class="menu__logo" src="/assets/img/logo_masterminer_color.svg" alt="">
+        <router-link to="/">
+          <img class="menu__logo" src="/assets/img/logo_masterminer_color.svg" alt="">
+        </router-link>
       </div>
-      <div class="menu__prices col-5 d-flex justify-content-start align-items-center">
+      <div class="menu__prices col-5 d-flex justify-content-start align-items-center ">
         <span>
           <p>{{prices[0]['symbol']}}USD</p>
           <p>${{parseFloat(prices[0]['price_usd']).toFixed(2)}}</p>
@@ -33,11 +35,11 @@
           </p>
         </span>
         <span>
-          <p>{{prices[2]['symbol']}}USD</p>
-          <p>${{parseFloat(prices[2]['price_usd']).toFixed(2)}}</p>
-          <p v-bind:class="prices[2]['percent_change_24h'] > 0 ? ('up-green') : ('down-red')" >
-            <i v-bind:class="prices[2]['percent_change_24h'] > 0 ? ('fa fa-arrow-up') : ('fa fa-arrow-down')"></i> 
-            ({{prices[2]['percent_change_24h']}})
+          <p>{{prices[6]['symbol']}}USD</p>
+          <p>${{parseFloat(prices[6]['price_usd']).toFixed(2)}}</p>
+          <p v-bind:class="prices[6]['percent_change_24h'] > 0 ? ('up-green') : ('down-red')" >
+            <i v-bind:class="prices[6]['percent_change_24h'] > 0 ? ('fa fa-arrow-up') : ('fa fa-arrow-down')"></i> 
+            ({{prices[6]['percent_change_24h']}})
           </p>
         </span>
       </div>
@@ -69,9 +71,8 @@ export default {
 
   data(){
     return {
-      prices: [],
       api: "https://api.masterminerclub.biz/api/v1/market_cap",
-      prices: [{},{},{}]
+      prices: [{},{},{},{},{},{},{},{}]
     }
   },
 
@@ -85,8 +86,8 @@ export default {
       .then(response => {
         this.prices = response.data
       })
-      .catch((error) => {
-        console.log(error)
+      .catch(() => {
+        
       })
       
     }
