@@ -43,21 +43,33 @@
           </p>
         </span>
       </div>
-      <div class="col-4 d-flex justify-content-center align-items-center  menu__link">
-        <!-- Right aligned nav items -->
+      <div class="menu__links">
+        <div>
+          <a class="menu__link-item-1" href="https://app.masterminerclub.biz/#/register">REGISTER</a>
+        </div>
+        <div>
+          <a class="menu__link-item-2" href="https://app.masterminerclub.biz/#/login">SIGN IN</a>
+          </div>
+        <div class="">
+          <a class="menu__button" onclick="openNav()"> MENU
+            <img src="/assets/img/menu-button.svg" alt=""></a>
+        </div>
+      </div>
+
+      <!-- <div class=" col-sm-4 d-flex justify-content-center align-items-center">
+        <! Right aligned nav items
         <b-navbar-nav class="list-inline" >
           <li class="list-inline-item menu__link-item-1">
             <a class="nav-link" href="https://app.masterminerclub.biz/#/register">REGISTER</a>
           </li>
           <li class="list-inline-item menu__link-item-2">
-            
             <a class="nav-link" href="https://app.masterminerclub.biz/#/login">SIGN IN</a>
           </li>
-          <li>
+          <li class="list-inline-item menu__link-item-3">
            <span class="menu__logo" onclick="openNav()">MENU <span class="menu-icon">&#9776;</span></span>
            </li>
         </b-navbar-nav> 
-      </div>
+      </div> -->
     </div>
   </nav>
 </template>
@@ -97,18 +109,29 @@ export default {
 }
 
 </script>
-     
 
 <style scoped>
 
   #menu {
     color: #8a8a8a ;
-    border-bottom: 1px solid rgba(228,230,233,0.2);
+    border-bottom: 1px solid rgba(228,230,233,0.3);
     height: 7.5rem;
+    font-size: .8rem;
+    
   }
 
-  .menu__link {
-    font-size: 12px
+  .menu__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    letter-spacing: 1px;
+  }
+
+  .menu__links a {
+    color: #8a8a8a;
+    cursor: pointer;
+    text-decoration: none;
   }
 
   .up-green {
@@ -120,37 +143,37 @@ export default {
   }
 
   .menu__link-item-1 {
-    padding-left: 30px;
-    padding-right: 30px
+    padding: 10px 30px;
+    margin-right: 10px;
   }
 
   .menu__link-item-1:hover {
-    border: 1px solid #fff;
-    border: 1px solid #025385;
-    background-color: #025385;
+    color: #e6e6e6;
+    border: 1px solid rgba(228,230,233,0.3);
+    margin-left: -1px;
   }
 
   .menu__link-item-2{
-    border: 1px solid #8a8a8a;
-    padding-left: 30px;
-    padding-right: 30px
+    border: 1px solid rgba(228,230,233,0.3);
+    padding: 10px 30px;
+    /* padding-left: 30px;
+    padding-right: 30px */
   }
   
   .menu__link-item-2:hover{
     border: 1px solid #025385;
     background-color: #025385;
     color: #fff !important;
-    padding-left: 30px;
-    padding-right: 30px
+
   }
 
-  .menu__link-item-1:hover a, .menu__link-item-2:hover a {
+  /* .menu__link-item-1:hover a, .menu__link-item-2:hover a {
     color: #ffffff !important;
-  }
+  } */
 
-  .menu__link-item-1 a:hover, .menu__link-item-2 a:hover {
+  /* .menu__link-item-1 a:hover, .menu__link-item-2 a:hover {
     color: #ffffff !important;
-  }
+  } */
 
   .menu__link-item-3{
     padding-left: 30px;
@@ -160,6 +183,8 @@ export default {
   .menu__link-item-3 i{
     font-size: 23px
   }
+
+  
 
   .list-inline {
     display: inline;
@@ -179,21 +204,22 @@ export default {
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 400;
-    
   }
 
   .menu__prices p {
     margin-bottom: 0px !important
   }
 
-  
-
   .menu__logo {
     max-width: 400px;
     width: 80%;
     font-size: 1rem;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1.5rem;
+  }
+
+  .menu__button img {
+    width: 1.5rem;
   }
 
   .menu-icon {
@@ -204,13 +230,14 @@ export default {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+
 }
 
 .overlay-content {
@@ -241,14 +268,20 @@ export default {
     font-size: 60px;
 }
 
+
+
 @media (max-width: 1000px){
     .menu__prices {
       display: none !important;
     }
     .menu__logo {
       max-width: 400px;
-      width: 100%;
+      width: 50%;
     }
+
+    .list-inline {
+    flex-direction: row;
+  }
 
   }
 
