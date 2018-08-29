@@ -2,12 +2,10 @@
   <nav id="menu">
     <!-- overlay Menu -->
     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
       <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#" @click="scroll('.second__section')">About</a>
+        <a href="#" @click="scroll('.sixth__section')">Plans</a>
       </div>
     </div>
     <!-- overlay Menu end -->
@@ -17,7 +15,7 @@
           <img class="menu__logo" src="/assets/img/logo_masterminer_color.svg" alt="">
         </router-link>
       </div>
-      <div class="menu__prices col-5 d-flex justify-content-start align-items-center ">
+      <div class="menu__prices col-5 d-flex justify-content-start align-items-center">
         <span>
           <p>{{prices[0]['symbol']}}USD</p>
           <p>${{parseFloat(prices[0]['price_usd']).toFixed(2)}}</p>
@@ -53,8 +51,9 @@
           <a class="menu__link-item-2" href="https://app.masterminerclub.biz/#/login">SIGN IN</a>
           </div>
         <div class="menu__link-item-3">
-          <a class="menu__button" onclick="openNav()"> MENU
-            <img src="/assets/img/menu-button.svg" alt=""></a>
+          <a class="menu__button" @click="openNav()"> MENU
+            <img src="/assets/img/menu-button.svg" alt="">
+          </a>
         </div>
       </div>
     </div>
@@ -63,6 +62,7 @@
 
 <script>
 import axios from 'axios'
+import helper from '@/helpers/functions'
 
 export default {
   name: 'Menu',
@@ -79,6 +79,7 @@ export default {
 
   mounted(){
     this.pricesCall()
+    
   },
 
   methods: {
@@ -88,9 +89,23 @@ export default {
         this.prices = response.data
       })
       .catch(() => {
-        
       })
-      
+    },
+
+    openNav() {
+      document.getElementById("myNav").style.height = "100%"
+    },
+
+    closeNav() {
+      document.getElementById("myNav").style.height = "0%"
+    },
+    
+    scroll(id){
+      let data = async() => {
+        await helper.goToByScroll(id)
+        await this.closeNav()
+      }
+      data()
     }
   }
 }
@@ -250,7 +265,9 @@ export default {
     font-size: 60px;
 }
 
-
+.menu__prices {
+  padding-bottom: 25px;
+}
 
 @media (max-width: 1000px){
     .menu__prices {

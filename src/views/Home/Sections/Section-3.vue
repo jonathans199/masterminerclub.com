@@ -66,7 +66,7 @@
   }
 
   .section3_section-img {
-    width: 10rem !important;
+    width: 2rem !important;
   }
 
   .third__section button{
@@ -126,9 +126,6 @@
   }
   
   @media (max-width: 1000px){
-    .section3_section-img{
-      display: none;
-    }
 
     .section3_section {
       flex-direction: column;

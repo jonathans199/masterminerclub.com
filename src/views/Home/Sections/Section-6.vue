@@ -69,7 +69,7 @@ export default {
   name:'Section6',
   methods: {
     scroll(){
-      helper.goToByScroll('.first__section')
+      helper.goToByScroll('#first-section')
     }
   }
 }
