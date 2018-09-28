@@ -38,10 +38,10 @@
         <div class="text_section">
           <h1>¿CÓMO GANO CON MASTERMINERCLUB?</h1>
           <ul>
-            <li>ROI</li>
+            <li>RETORNO DE LA INVERSION</li>
             <li>INICIO RÁPIDO</li>
             <li>BINARIO</li>
-            <li>LIFESTYLE</li>
+            <li>ESTILO DE VIDA</li>
           </ul>
 
           <a class="section3_section-button" href="/assets/pdf/MasterMinerClubES.V2.pdf" target="_blank" >

@@ -20,24 +20,25 @@
               <form @submit="register" class="first__section-form">
                 <div class="form-group">
                   <h2 class="form-header">registrate hoy!</h2>
-                  <input v-model="form.email" type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email" required>
+                  <input v-model="form.email" type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Correo Electronico" required>
                 </div>
                 <div class="form-group">
-                  <input v-model="form.username" type="text" class="form-control"  placeholder="Username" required>
+                  <input v-model="form.username" type="text" class="form-control"  placeholder="Usuario" required>
                 </div>
                 <div class="form-group">
-                  <input v-model="form.password" type="password" class="form-control"  placeholder="Password">
+                  <input v-model="form.password" type="password" class="form-control"  placeholder="Contraseña">
                 </div>
                 <div class="form-group">
-                  <input v-model="form.parent_uuid" type="text" class="form-control"  placeholder="Codigo sponsor (opcional)" required>
+                  <input v-model="form.parent_uuid" type="text" class="form-control"  placeholder="Codigo Sponsor (opcional)" required>
                 </div>
                 <div class="form-group">
                   <button v-if="!loading" type="submit" class="float-right">ENVIAR</button>
-                  <button v-if="loading" type="submit" class="float-right">LOADING <i class="fa fa-spinner fa-spin" /></button>
+                  <button v-if="loading" type="submit" class="float-right">CARGANDO <i class="fa fa-spinner fa-spin" /></button>
                 </div>
                 <p class="first__section-form-terms">
-                  By clicking “Sign up for Master Miner Club, you agree to our 
-                  <router-link to="/terms" class="terms__link">terms of service and privacy</router-link> statement.
+                  Al hacer clic en "Registrarse en Master Miner Club", usted acepta nuestra
+
+                  <router-link to="/terms" class="terms__link">términos de servicio y privacidad. </router-link>
                 </p>
               </form>
             </div>
@@ -167,7 +168,7 @@ export default {
 
   .first__section-form-terms{
     /* padding-top: 10px; */
-    font-size: 10px
+    font-size: .89rem;
   }
 
   .first__section-form input {
